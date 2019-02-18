@@ -13,7 +13,7 @@ pipeline {
                 rtUpload (
                     buildName: 'holyFrog',
                     buildNumber: '42',
-                    serverId: Artifactory Version 4.15.0, // Obtain an Artifactory server instance, defined in Jenkins --> Manage:
+                    serverId: 'Artifactory Version 4.15.0', // Obtain an Artifactory server instance, defined in Jenkins --> Manage:
                     specPath: 'jenkins-examples/pipeline-examples/resources/recursive-flat-upload.json'
                 )
             }
@@ -24,7 +24,7 @@ pipeline {
                 rtDownload (
                     buildName: 'holyFrog',
                     buildNumber: '42',
-                    serverId: Artifactory Version 4.15.0,
+                    serverId: 'Artifactory Version 4.15.0',
                     specPath: 'jenkins-examples/pipeline-examples/resources/aql-download.json'
                 )
             }
@@ -35,7 +35,7 @@ pipeline {
                 rtPublishBuildInfo (
                     buildName: 'holyFrog',
                     buildNumber: '42',
-                    serverId: Artifactory Version 4.15.0
+                    serverId: 'Artifactory Version 4.15.0'
                 )
             }
         }
