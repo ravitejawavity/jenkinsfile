@@ -14,7 +14,7 @@ pipeline {
                     buildName: 'holyFrog',
                     buildNumber: '42',
                     serverId: 'Artifactory Version 4.15.0', // Obtain an Artifactory server instance, defined in Jenkins --> Manage:
-                    specPath: 'jenkins-examples/pipeline-examples/resources/recursive-flat-upload.json'
+                    specPath: 'gradle-dev-local/com.github.jitpack/artifactory-integration/recursive-flat-upload.json'                   
                 )
             }
         }
@@ -25,7 +25,7 @@ pipeline {
                     buildName: 'holyFrog',
                     buildNumber: '42',
                     serverId: 'Artifactory Version 4.15.0',
-                    specPath: 'jenkins-examples/pipeline-examples/resources/aql-download.json'
+                    specPath: 'gradle-dev-local/com.github.jitpack/artifactory-integration/aql-download.json'
                 )
             }
         }
